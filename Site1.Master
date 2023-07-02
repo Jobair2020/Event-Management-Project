@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Event.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Events</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+
+    
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.flexisel.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+
+
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="css/cdn.datatables.net_1.13.4_css_jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="js/cdn.datatables.net_1.13.4_js_jquery.dataTables.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <form id="form1" runat="server">
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="header-w3layouts">
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Events</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a class="navbar-brand" href="index.html">Events</a></h1>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                            <li><a class="hvr-sweep-to-right" href="index.html">Home</a></li>
+                            <li><a class="hvr-sweep-to-right" href="about.html">About</a></li>
+                            <li><a class="hvr-sweep-to-right" href="events.html">Events</a></li>
+
+                            <li><a class="hvr-sweep-to-right" href="gallery.html">Gallery</a></li>
+                            <li><a class="hvr-sweep-to-right" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="col-md-3 foot-left">
+                    <h3>About Us</h3>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                </div>
+                <div class="col-md-3 foot-left">
+                    <h3>Get In Touch</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+
+                    <div class="contact-btm">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        <p>90 Street, City, State 34789.</p>
+                    </div>
+                    <div class="contact-btm">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                        <p>+456 123 7890</p>
+                        <div class="contact-btm">
+                        </div>
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        <p><a href="mailto:example@email.com">info@example.com</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+                <div class="col-md-3 foot-left">
+                    <h3>Latest Events</h3>
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">
+                            <img src="images/g1.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">
+                            <img src="images/g2.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">
+                            <img src="images/g3.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">
+                            <img src="images/g4.jpg" alt="" class="img-responsive"></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-3 foot-left">
+                    <h3>Subscribe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has </p>
+                    <form action="#" method="post">
+                        <input type="email" name="Enter Your Email" placeholder="Enter Your Email" required="">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- /footer-top -->
+
+        <!-- footer -->
+        <div class="copy-right">
+            <div class="container">
+                <div class="col-md-6 col-sm-6 col-xs-6 copy-right-grids">
+                    <div class="copy-left">
+                        <p>&copy; 2017 Events. All rights reserved | Design by Jobair</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 top-middle">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!-- //footer -->
+    </form>
+</body>
+</html>
